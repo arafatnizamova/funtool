@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunTool</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__head">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl header__nav d-flex justify-content-between align-items-center">
+                    <a href="#" class="header__nav-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <button class="header__nav-btn d-flex d-xl-none collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+                       <span class="header__nav-btn_active"></span>
+                </button>
+                    <div id="navbar" class="collapse navbar-collapse w-auto navbar__content">
+                        <ul class="navbar__list d-flex flex-column flex-lg-row">
+                            <li class="navbar__list-item"><a href="#" class="navbar__list-link">BICYCLES</a></li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__list-link">ABOUT US</a></li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__list-link">TARIFFS</a></li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__list-link">AdvantageS</a></li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__list-link">Gallery</a></li>
+                        </ul>
+                        <a href="tel:+8 (998) 94 653 06 51" class="navbar__phone">+8 (998) 94 653 06 51</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="headerBanners" class="carousel slide header__slider" data-ride="carousel">
+            <!-- data ride обозначает джава скрипту че это -->
+            <ol class="header__slider-dot carousel-indicators">
+                <li class="header__slider-item active" data-target="#headerBanners" data-slide-to="0"></li>
+                <li class="header__slider-item" data-target="#headerBanners" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active header__slider-slide">
+                    <img src="img/banner.jpg" class="header__slider-pic" alt="">
+                    <section class="header__slider-content">
+                        <div class="container d-sm-block d-flex flex-column align-items-center text-center text-sm-left">
+                            <h3 class="header__slider-title">
+                                Get bicycle from <span class="header__slider-title_strong">
+                                        FUNTOOL
+                                    </span> and stay SPORTY
+                            </h3>
+                            <p class="header__slider-desc">
+                                You can find any bikes you want
+                            </p>
+                            <a href="#" class="header__slider-link">
+                                    ORDER NOW
+                                </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-item header__slider-slide">
+                    <img src="img/banner.jpg" class="header__slider-pic" alt="">
+                    <section class="header__slider-content">
+                        <div class="container  d-sm-block d-flex flex-column align-items-center text-center text-sm-left">
+                            <h3 class="header__slider-title">
+                                Get bicycle from <span class="header__slider-title_strong">
+                                        FUNTOOL
+                                    </span> and stay SPORTY
+                            </h3>
+                            <p class="header__slider-desc">
+                                You can find any bikes you want
+                            </p>
+                            <a href="#" class="header__slider-link">
+                                    ORDER NOW
+                                </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container text-center about">
+        <h3 class="about__title">
+            ABOUT US
+        </h3>
+        <div class="row justify-content-center">
+            <div class="about__shadow col-lg-6 col-md-8 col-10"></div>
+            <p class="about__desc col-md-10 col-12">
+                <span class="col-md-10 col-12 about__desc-extra">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo, consectetur aenean orci amet volutpat. Lorem facilisis risus est pharetra vitae. Mi nec viverra amet, urna tincidunt volutpat. Ornare enim, leo feugiat arcu, turpis vivamus. Aliquet arcu dictum sit leo. Elit sagittis, pulvinar sociis sed nullam sed suspendisse. Tincidunt arcu cras metus imperdiet aliquam ipsum tincidunt elit.
+                 </span>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="title">
+            Bicycles
+        </h3>
+        <div class="products">
+            <ul class="nav products__nav" id="productTab" role="tablist">
+                <li class="products__nav-item">
+                    <a href="#tab1" data-toggle="tab" class="products__nav-link active">
+                            For City cycling
+                          </a>
+                </li>
+                <li class="products__nav-item">
+                    <a href="#tab2" data-toggle="tab" class="products__nav-link">
+                            For Mountain cycling
+                          </a>
+                </li>
+                <li class="products__nav-item">
+                    <a href="#tab3" data-toggle="tab" class="products__nav-link">
+                            For Bike stunts
+                          </a>
+                </li>
+            </ul>
+            <div class="tab-content product__panel">
+                <div class="tab-pane fade show active" id="tab1">
+
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                     50$
+                                 </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="product__item">
+                                <img src="img/first.png" alt="" class="product__item-pic">
+                                <h2 class="product__item-title">
+                                    Radon
+                                </h2>
+                                <p class="product__item-model">
+                                    Jealous AL Hybrid 9.0 – E-Bike Hardtail
+                                </p>
+                                <span class="product__item-price">
+                                      50$
+                                  </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="title"> Tariff
+        </h3>
+        <div class="tariff">
+            <div class="row flex-column">
+                <div class="tariff__item d-flex flex-wrap flex-lg-row flex-column">
+                    <img src="img/tarif.jpg" alt="" class="col-lg-5 col-12 tariff__item-pic">
+                    <div class="col-lg-6">
+                        <div class="tariff__item-content d-flex flex-column">
+                            <h2 class="tariff__item-title">
+                                Tariff "15 days on the saddle"
+                            </h2>
+                            <p class="tariff__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh ullamcorper arcu tristique faucibus est pulvinar imperdiet nisl, sem. Feugiat augue arcu, vitae, convallis phasellus vulputate euismod egestas. Hendrerit id turpis ullamcorper varius sit.
+                            </p>
+                            <div class="tariff__item-info align-self-sm-end align-self-end align-self-center align-items-center flex-sm-row flex-column">
+                                <span class="tariff__item-price">
+                                         $1200
+                                      </span>
+                                <a href="#" class="tariff__item-btn">
+                                         ORDER NOW
+                                      </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff__item d-flex flex-wrap flex-lg-row flex-column">
+                    <img src="img/Rectangle 17.jpg" alt="" class="col-lg-5 col-12 tariff__item-pic">
+                    <div class="col-lg-6">
+                        <div class="tariff__item-content d-flex flex-column">
+                            <h2 class="tariff__item-title">
+                                Tariff "month days on the saddle"
+                            </h2>
+                            <p class="tariff__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh ullamcorper arcu tristique faucibus est pulvinar imperdiet nisl, sem. Feugiat augue arcu, vitae, convallis phasellus vulputate euismod egestas. Hendrerit id turpis ullamcorper varius sit.
+                            </p>
+                            <div class="tariff__item-info align-self-sm-end align-self-end align-self-center align-items-center flex-sm-row flex-column">
+                                <span class="tariff__item-price">
+                                    $2100
+                                      </span>
+                                <a href="#" class="tariff__item-btn">
+                                         ORDER NOW
+                                      </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff__item d-flex flex-wrap flex-lg-row flex-column">
+                    <img src="img/Rectangle 17 (1).jpg" alt="" class="col-lg-5 col-12 tariff__item-pic">
+                    <div class="col-lg-6">
+                        <div class="tariff__item-content d-flex flex-column">
+                            <h2 class="tariff__item-title">
+                                Tariff "Familiy"
+                            </h2>
+                            <p class="tariff__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh ullamcorper arcu tristique faucibus est pulvinar imperdiet nisl, sem. Feugiat augue arcu, vitae, convallis phasellus vulputate euismod egestas. Hendrerit id turpis ullamcorper varius sit.
+                            </p>
+                            <div class="tariff__item-info align-self-sm-end align-self-end align-self-center align-items-center flex-sm-row flex-column">
+                                <span class="tariff__item-price">
+                                    $4699
+                                      </span>
+                                <a href="#" class="tariff__item-btn">
+                                         ORDER NOW
+                                      </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h3 class="title">Why choose us
+    </h3>
+    <div class="choose">
+        <div class="container">
+            <div class="row justify-content-center text-center ">
+                <div class="col-lg-4 col-md-6  choose__col">
+                    <section class="choose__item">
+                        <h2 class="choose__item-title">
+                            Delivery
+                        </h2>
+                        <p class="choose__item-desc">
+                            We deliver bikes to the place where you want to ride. And get it back when your time will end.
+                        </p>
+                    </section>
+                </div>
+                <div class="col-lg-4 col-md-6 choose__col">
+                    <section class="choose__item">
+                        <h2 class="choose__item-title">
+                            Protectors
+                        </h2>
+                        <p class="choose__item-desc">
+                            We provide all protectors with bicycle. And you will be protected. Safety of our suppliers in the first place.
+                    </section>
+                </div>
+                <div class="col-lg-4 col-md-6 choose__col">
+                    <section class="choose__item">
+                        <h2 class="choose__item-title">
+                            perfect bikes
+                        </h2>
+                        <p class="choose__item-desc">
+                            We provide all protectors with bicycle. And you will be protected. Safety of our suppliers in the first place.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="title"> comments
+    </h3>
+    <div class="comments">
+        <div class="container">
+            <div class="row flex-column">
+                <div class=" col-xl-7 col-lg-8 comments__col">
+                    <div class="comments__item d-flex align-items-md-start  flex-md-row  align-items-center flex-column">
+                        <img src="img/Rectangle 24.png" alt="" class="comment__item-pic">
+                        <section class="comments__item-content">
+                            <h2 class="comments__item-title">
+                                Ivan Ivanov 56 years old
+                            </h2>
+                            <p class="comments__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis egestas sit iaculis adipiscing et id aliquam. Lectus ut congue amet mattis ornare suspendisse aliquet. At aliquam ornare id ante laoreet
+                                <span class="comments__item-desc_more">
+                                       .........
+                                    </span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class=" col-xl-7 col-lg-8 comments__col">
+                    <div class="comments__item d-flex align-items-md-start flex-md-row  align-items-center flex-column">
+                        <img src="img/Rectangle 24 2.png " alt="" class="comment__item-pic">
+                        <section class="comments__item-content">
+                            <h2 class="comments__item-title">
+                                Khvan Сhung 26 years old
+                            </h2>
+                            <p class="comments__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis egestas sit iaculis adipiscing et id aliquam. Lectus ut congue amet mattis ornare suspendisse aliquet. At aliquam ornare id ante laoreet
+                                <span class="comments__item-desc_more">
+                                       .........
+                                    </span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-8 comments__col">
+                    <div class="comments__item d-flex align-items-md-start flex-md-row  align-items-center flex-column">
+                        <img src="img/Rectangle 24 (1).png" alt="" class="comment__item-pic">
+                        <section class="comments__item-content">
+                            <h2 class="comments__item-title">
+                                Wade Warren 50 years old
+                            </h2>
+                            <p class="comments__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis egestas sit iaculis adipiscing et id aliquam. Lectus ut congue amet mattis ornare suspendisse aliquet. At aliquam ornare id ante laoreet
+                                <span class="comments__item-desc_more">
+                                       .........
+                                    </span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="title"> Gallery
+    </h3>
+    <div class="gallery">
+        <img src="img/Rectangle 27.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 28.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 29.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 30.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 31.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 32.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 33.png" alt="" class="gallery__pic">
+        <img src="img/Rectangle 34.png" alt="" class="gallery__pic">
+    </div>
+    <div class="formEl">
+        <button class="more">
+            See more 
+            <img src="img/Vector.svg" alt="" class="more__icon">
+        </button>
+        <h3 class="title"> Ordering
+        </h3>
+        <form action="" class="form d-flex flex-column align-items-center">
+            <div class="form__input d-flex flex-column-reverse">
+                <input type="text" class="form__input-text" id="name" autocomplete="off" required>
+                <label for="name" class="form__input-label">Name</label>
+            </div>
+            <div class="form__input d-flex flex-column-reverse">
+                <input type="email" class="form__input-text" id="email" autocomplete="off" required>
+                <label for="email" class="form__input-label">Email</label>
+            </div>
+            <div class="form__input d-flex flex-column-reverse">
+                <input type="tel" pattern="[0-9]{3} [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат 998 91 123-45-67" class="form__input-text" id="number">
+                <label for="number" class="form__input-label">Number</label>
+            </div>
+            <button class="form__btn">Get consult</button>
+        </form>
+    </div>
+
+
+    <script src="script/popper.js"></script>
+    <script src="script/bootstrap.js"></script>
+</body>
+
+</html>

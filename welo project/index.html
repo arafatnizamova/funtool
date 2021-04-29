@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunTool</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__head">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl header__nav d-flex justify-content-between align-items-center">
+                   <a href="#" class="header__nav-logo">
+                       <img src="img/logo.png" alt="">
+                   </a>
+                   <button class="header__nav-btn d-flex d-xl-none collapsed" type="button" data-toggle= "collapse" data-target="#navbar">
+                       <span class="header__nav-btn_active"></span>
+                </button>
+                         <div id="navbar" class="collapse navbar-collapse w-auto navbar__content">
+                             <ul class="navbar__list d-flex flex-column flex-lg-row">
+                                 <li class="navbar__list-item"><a href="#" class="navbar__list-link">BICYCLES</a></li>
+                                 <li class="navbar__list-item"><a href="#" class="navbar__list-link">ABOUT US</a></li>
+                                 <li class="navbar__list-item"><a href="#" class="navbar__list-link">TARIFFS</a></li>
+                                 <li class="navbar__list-item"><a href="#" class="navbar__list-link">AdvantageS</a></li>
+                                 <li class="navbar__list-item"><a href="#" class="navbar__list-link">Gallery</a></li>
+                             </ul>
+                             <a href="tel:+8 (998) 94 653 06 51" class="navbar__phone">+8 (998) 94 653 06 51</a>
+                         </div>
+                </nav>
+            </div>
+        </div>
+        <div id="headerBanners" class="carousel slide header__slider" data-ride="carousel">
+            <!-- data ride обозначает джава скрипту че это -->
+                <ol class="header__slider-dot carousel-indicators">
+                    <li class="header__slider-item active" data-target="#headerBanners" data-slide-to="0"></li>
+                    <li class="header__slider-item" data-target="#headerBanners" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active header__slider-slide">
+                        <img src="img/banner.jpg" class="header__slider-pic" alt="">
+                        <section class="header__slider-content">
+                            <div class="container">
+                                <h3 class="header__slider-title">
+                                    Get bicycle from <span class="header__slider-title_strong">
+                                        FUNTOOL
+                                    </span> and stay SPORTY
+                                </h3>
+                                <p class="header__slider-desc">
+                                    You can find any bikes you want
+                                </p>
+                                <a href="#" class="header__slider-link">
+                                    ORDER NOW
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item header__slider-slide">
+                            <img src="img/banner.jpg" class="header__slider-pic" alt="">
+                        <section class="header__slider-content">
+                            <div class="container">
+                                <h3 class="header__slider-title">
+                                    Get bicycle from <span class="header__slider-title_strong">
+                                        FUNTOOL
+                                    </span> and stay SPORTY
+                                </h3>
+                                <p class="header__slider-desc">
+                                    You can find any bikes you want
+                                </p>
+                                <a href="#" class="header__slider-link">
+                                    ORDER NOW
+                                </a>
+                            </div>
+                            </section>
+                    </div>
+                </div>
+        </div>
+    </header>
+     
+    <script src="script/popper.js"></script>
+    <script src="script/bootstrap.js"></script>
+</body>
+</html>

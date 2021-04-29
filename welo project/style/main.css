@@ -1,0 +1,215 @@
+/* 
+
+Root Style Sheet
+
+*/
+@import 'fonts.css';
+
+:root{
+    --main: #ECECEC;
+    --nav: #636363;
+    --orangeMain: #FF8A00;
+    --header:  linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 33.85%, rgba(0, 0, 0, 0.4) 66.15%, rgba(0, 0, 0, 0.2) 100%);
+    --extra: white;
+    --btnShadow:  #C96D00;
+    --dark: #323232;
+    --aboutShadow:#FF9A22;
+    --about: #606060;
+    --tabsLink: #919191;
+    --item: radial-gradient(50% 50% at 50% 50%, rgba(102, 102, 102, 0.79) 0%, #666666 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+.header__head{
+    background: var(--nav);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar__list-link{
+    font-family: 'Lato';
+    font-size: 18px;
+    color: var(--extra);
+    text-transform: uppercase;
+    /* все буковки заглавненькие:) */
+    transition: 300ms;
+    border-bottom: 1px solid transparent;
+    padding: 25px 4px;
+    display: block;
+    margin-right: 17px;
+}
+.header__list-item:last-of-type .navbar__list-link{
+    margin-right: 0;
+}
+.navbar__list-link:hover{
+    color: var(--orangeMain);
+    border-color: var(--orangeMain);
+
+}
+
+.header__nav{
+    padding: 0;
+    position: relative;
+}
+.navbar__phone{
+    color: var(--extra);
+    font-size: 18px;
+    font-family: 'Lato';
+    transition: 300ms;
+    margin-left: 137px;
+}
+.navbar__phone:hover{
+    color: var(--orangeMain);
+}
+
+.header__nav-btn{
+    border: none;
+    outline: none;
+    height: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header__nav-btn:focus{
+    outline: none;
+}
+
+.header__nav-btn::before, .header__nav-btn::after, .header__nav-btn_active{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--dark);
+    transition: 200ms;
+}
+
+.header__nav-btn:not(.collapsed) .header__nav-btn_active{
+    opacity: 0;
+}
+.header__nav-btn:not(.collapsed)::before{
+    transform: rotate(45deg) translateY(10px) translateX(5px);
+}
+.header__nav-btn:not(.collapsed)::after{
+    transform: rotate(-45deg) translateY(-8px) translateX(2px);
+}
+
+
+/* 
+
+SLIDER***********************************************************
+
+*/
+.header__slider{
+    margin-top: 78px;
+}
+.header__slider-pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header__slider-slide{
+    min-height: 100vh;
+}
+.header__slider-content{
+    position: absolute;
+    background: var(--header);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__slider-title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: var(--extra);
+    font-size: 50px;
+    max-width: 708px;
+    width: 100%;
+}
+.header__slider-title_strong{
+    color: var(--orangeMain);
+}
+.header__slider-desc{
+    color: var(--extra);
+    font-family: 'Montserrat';
+    font-size: 30px;
+    margin: 16px 0 62px;
+}
+.header__slider-link{
+    display: block;
+    width: max-content;
+    background: var(--orangeMain);
+    color: var(--extra);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    padding: 20px 87px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 var(--btnShadow) ;
+    transition: 300ms;
+}
+.header__slider-link:hover{
+    color: var(--extra);
+}
+.header__slider-link:active{
+    box-shadow: 0 0 0 0 transparent;
+    transform: translateX(4px) translateY(4px);
+}
+.header__slider-dot{
+    position: absolute;
+    z-index: 2;
+    bottom: 65px;
+    display: flex;
+    list-style: none;
+}
+.header__slider-dot li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--extra);
+    margin-right: 55px;
+    transition: 300ms;
+    border: none; 
+}
+.header__slider-item:last-of-type{
+    margin-right: 0;
+}
+.header__slider-item.active{
+    background: var(--orangeMain);
+}
+/* 
+
+MEDIA QUERY
+
+*/
+
+
+
+@media(max-width: 1200px){
+    .navbar__content{
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: var(--dark);
+    }
+}

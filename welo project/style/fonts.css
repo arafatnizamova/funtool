@@ -1,0 +1,48 @@
+/* 
+
+
+ROBOTO
+
+*/
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+/* 
+
+MONTSERRAT
+
+*/
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}@font-face{
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face{
+    font-family: 'MontserratA';
+    src: url(../fonts/MontserratAlternates-Regular.ttf);
+}
+@font-face{
+    font-family: 'Mulish';
+    src: url(../fonts/Mulish-Bold.ttf);
+}
+@font-face{
+   font-family: 'Raleway';
+   src: url(../fonts/Raleway-Bold.ttf);
+}
